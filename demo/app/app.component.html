@@ -1,0 +1,18 @@
+﻿<div>
+    <div class="container">
+        <div class="text-center">
+            <h1>Angular Pagination Component Demo</h1>
+
+            <!-- items being paged -->
+            <div *ngFor="let item of pageOfItems">{{item.name}}</div>
+
+            <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+        </div>
+    </div>
+    <hr />
+    <div class="credits text-center">
+        <p>
+            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        </p>
+    </div>
+</div>

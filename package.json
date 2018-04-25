@@ -1,0 +1,27 @@
+{
+    "name": "jw-angular-pagination",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cornflourblue/jw-angular-pagination.git"
+    },
+    "scripts": {
+        "build": "tsc && copyfiles --up 1 src/*.html lib"
+    },
+    "main": "./lib/jw-pagination.component.js",
+    "types": "./lib/jw-pagination.component.d.ts",
+    "license": "MIT",
+    "devDependencies": {
+        "@angular/common": "^5.2.10",
+        "@angular/compiler": "^5.2.10",
+        "@angular/core": "^5.2.10",
+        "@types/node": "^9.6.6",
+        "copyfiles": "^2.0.0",
+        "rxjs": "^5.5.10",
+        "typescript": "^2.8.3",
+        "zone.js": "^0.8.26"
+    },
+    "dependencies": {
+        "jw-paginate": "^1.0.0"
+    }
+}

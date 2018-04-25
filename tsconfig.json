@@ -1,0 +1,12 @@
+﻿{
+    "compilerOptions": {
+        "declaration": true,
+        "experimentalDecorators": true,
+        "lib": [ "es2015", "dom" ],
+        "outDir": "lib",
+        "target": "es5"
+    },
+    "files": [
+        "src/jw-pagination.component.ts"
+    ]
+}
