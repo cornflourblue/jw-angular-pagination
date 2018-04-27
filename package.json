@@ -1,6 +1,7 @@
 {
     "name": "jw-angular-pagination",
-    "version": "1.0.2",
+    "version": "1.0.3",
+    "homepage": "http://jasonwatmore.com/post/2018/04/26/npm-jw-angular-pagination-component",
     "repository": {
         "type": "git",
         "url": "https://github.com/cornflourblue/jw-angular-pagination.git"
