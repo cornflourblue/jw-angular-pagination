@@ -41,3 +41,6 @@ typings
 lib
 demo/app/**/*.js
 demo/app/**/*.js.map
+
+# VS Code settings
+.vscode

@@ -5,7 +5,23 @@ import paginate = require('jw-paginate');
 @Component({
   moduleId: module.id,
   selector: 'jw-pagination',
-  templateUrl: 'jw-pagination.component.html'
+  template: `<ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+  <li [ngClass]="{disabled:pager.currentPage === 1}">
+      <a (click)="setPage(1)">First</a>
+  </li>
+  <li [ngClass]="{disabled:pager.currentPage === 1}">
+      <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+  </li>
+  <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+      <a (click)="setPage(page)">{{page}}</a>
+  </li>
+  <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+      <a (click)="setPage(pager.currentPage + 1)">Next</a>
+  </li>
+  <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+      <a (click)="setPage(pager.totalPages)">Last</a>
+  </li>
+</ul>`
 })
 
 export class JwPaginationComponent implements OnInit, OnChanges {
@@ -31,10 +47,6 @@ export class JwPaginationComponent implements OnInit, OnChanges {
   }
 
   private setPage(page: number) {
-    if (page < 1 || page > this.pager.totalPages) {
-        return;
-    }
-
     // get new pager object for specified page
     this.pager = paginate(this.items.length, page, this.pageSize);
 
