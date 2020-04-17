@@ -5,6 +5,10 @@ export declare class JwPaginationComponent implements OnInit, OnChanges {
     initialPage: number;
     pageSize: number;
     maxPages: number;
+    firstButtonLabel: string;
+    previousButtonLabel: string;
+    nextButtonLabel: string;
+    lastButtonLabel: string;
     pager: any;
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
