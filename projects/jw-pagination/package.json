@@ -1,0 +1,17 @@
+{
+    "name": "jw-angular-pagination",
+    "version": "1.2.0",
+    "homepage": "https://jasonwatmore.com/post/2018/04/26/npm-jw-angular-pagination-component",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cornflourblue/jw-angular-pagination.git"
+    },
+    "peerDependencies": {
+        "@angular/common": "^9.1.11",
+        "@angular/core": "^9.1.11"
+    },
+    "dependencies": {
+        "tslib": "^1.10.0",
+        "jw-paginate": "^1.0.4"
+    }
+}

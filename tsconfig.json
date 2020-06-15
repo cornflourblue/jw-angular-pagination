@@ -1,12 +1,30 @@
-﻿{
-    "compilerOptions": {
-        "declaration": true,
-        "experimentalDecorators": true,
-        "lib": [ "es2015", "dom" ],
-        "outDir": "lib",
-        "target": "es5"
-    },
-    "files": [
-        "src/jw-pagination.component.ts"
-    ]
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "jw-pagination": [
+        "dist/jw-pagination/jw-pagination",
+        "dist/jw-pagination"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
 }
